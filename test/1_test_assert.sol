@@ -9,8 +9,8 @@ import "./Koans.sol";
     Some are true and some are false
     The point isn't to be redundant
     But to learn Solidity testing
-*/  
-contract Test_Assert_1 is Koans {
+*/
+contract TestAssert is Koans {
 
     // You can make the tests fail in specific places in your code
     function test_should_fail_by_default() public {
@@ -30,7 +30,7 @@ contract Test_Assert_1 is Koans {
     // You can test for (in)equality on basic data types
     function test_bools_are_equal() public {
         bool actual = true;
-        Assert.equal(actual, __, "should be equal"); 
+        Assert.equal(actual, __, "should be equal");
     }
 
     // But you can only compare apples to apples, so typecast your values to be the same
@@ -39,8 +39,8 @@ contract Test_Assert_1 is Koans {
         Assert.notEqual(actual, int(__), "should NOT be equal");
     }
 
-    /*  
-        Explore further: 
+    /*
+        Explore further:
         To see currently supported assertion tests, check out
         https://github.com/trufflesuite/truffle/blob/master/packages/truffle-core/lib/testing/Assert.sol
     */
